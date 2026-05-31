@@ -1,0 +1,150 @@
+body{
+    background-color: #f8f9fa;
+}
+
+.hero{
+    background:linear-gradient(
+        135deg,
+        #0a2342,
+        #133c72
+    );
+
+    color:white;
+    padding:120px 20px;
+    text-align:center;
+}
+
+.hero h1{
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.btn-gold{
+    background-color: #FFD700;
+    color: #0a2342;
+    font-weight: bold;
+    transition:0.3s;
+}
+
+.btn-gold:hover{
+    background-color: #e6c200;
+}
+
+footer{
+    background:#0a2342;
+    color:white;
+    padding:25px;
+    text-align:center;
+    border-top:4px solid #FFD700;
+}
+
+.card{
+    border:none;
+    box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,.5);
+}
+
+.card{
+    border-left:4px solid #FFD700;
+}
+
+h1{
+    position:relative;
+    padding-bottom:10px;
+}
+
+h1::after{
+    content:"";
+    display:block;
+    width:80px;
+    height:4px;
+    background:#FFD700;
+    margin:10px auto 0;
+}
+
+.nav-link:hover{
+    color:#FFD700 !important;
+    font-weight :bold;
+}
+
+.hero-logo{
+    width:180px;
+    height:auto;
+    object-fit:cover;
+    border-radius:50%;
+    box-shadow:0 0 25px rgba(255,215,0,0.5);
+}
+
+.hero-logo{
+    transition:0.3s;
+}
+
+.hero-logo:hover{
+    transform:scale(1.05);
+}
+
+.btn-gold:hover{
+    transform:scale(1.05);
+}
+
+.navbar{
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);
+}
+
+.hero{
+    min-height:70vh;
+    display:flex;
+    align-items:center;
+}
+
+body {
+    opacity: 1;
+    transition: opacity 0.35s ease;
+}
+
+body.page-fade-out {
+    opacity: 0;
+}
+
+.btn {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.staff-hero {
+    height: 70vh;
+
+    background-image: url("image.logo/IMG_20260224_191901.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.staff-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.staff-hero .container {
+    position: relative;
+    z-index: 1;
+}
